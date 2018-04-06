@@ -25,7 +25,7 @@ class BarTitle extends React.Component {
   render() {
     return (
       <div className="title-bar">
-        <h1 class="Logo">Connect</h1>
+        <h1 className="title">Connect</h1>
         {/* <Search />
         <BtnNew /> */}
       </div>

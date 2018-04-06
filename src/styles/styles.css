@@ -1,3 +1,32 @@
 .title-bar {
+    /* app bar bg: */
+    background: #212121;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.12), 0 4px 4px 0 rgba(0,0,0,0.24);
+}
+.title {
+    /* menu: */
+    /* Connect: */
+    font-family: Assistant-ExtraBold;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: left;
+}
 
+.search {
+    /* search: */
+    /* Search your connects: */
+    font-family: Assistant-Light;
+    font-size: 20px;
+    color: #727272;
+    text-align: left;
+    /* Fill 38: */
+    background: #FFFFFF;
+    /* Fill 39: */
+    background: #FFFFFF;
+    /* Fill 40: */
+    background: #FFFFFF;
+}
+
+h1, h2, h3 {
+    margin: 0;
 }
