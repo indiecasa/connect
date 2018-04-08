@@ -31,30 +31,26 @@
     background: #FFFFFF;
 }
 
-/* Split Pane */
+/* Contact List */
+
 .connect-list {
     padding: 0;
     margin: 0;
     margin-top: 60px;
     list-style-type: none;
-    width: 50%;
+    width: 45%;
     float: left;
     background-color: #212121;
 }
 
-.detail-view {
-    margin-top: 60px;
-    width: 50%;
-    float: right;
-    background-color: #FAFAFA;
-}
-
 .profile-pic {
     padding-top: 5px;
+    margin-left: 10px;
+    margin-top: 5px;
     border-radius: 50%;
     border: 0px;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -66,12 +62,13 @@
 }
 
 .list-deets {
+    margin-left: 5px;
     padding-top: 10px;
 }
 
 .list-name {
-    font-family: Assistant-SemiBold;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     color: #FFFFFF;
     letter-spacing: 0.86px;
     display: inline-block;
@@ -79,7 +76,6 @@
 }
 
 .list-loc {
-    font-family: Assistant-Light;
     font-size: 14px;
     color: #535353;
     letter-spacing: 0.64px;
@@ -97,10 +93,42 @@
     margin-bottom: 5px;
 }
 
+.list-org-active {
+    background-color: #212121;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 2px;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Detail View */
+
+.detail-view {
+    margin-top: 60px;
+    width: 55%;
+    float: right;
+    background-color: #FAFAFA;
+    text-align: center;
+}
+
+.detail-pic {
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 0px;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 h1, h2, h3 {
     margin: 0;
 }
 
 body {
-    font-family: Assistant-Light;
+    font-family: Assistant;
+    font-weight: 300;
 }
