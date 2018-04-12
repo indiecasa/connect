@@ -5,6 +5,7 @@ var jd = {
   firstName: "James",
   lastName: "Dean",
   mobile: "832-392-3949",
+  email: "james@dean.com",
   org: "Google",
   loc: "Hollywood, CA",
   imgPath: "https://avatars3.githubusercontent.com/u/1170938"
@@ -14,6 +15,7 @@ var jl = {
   firstName: "John",
   lastName: "Lennon",
   mobile: "832-392-3949",
+  email: "john@lennon.com",
   org: "Airbnb",
   loc: "New York, NY",
   imgPath: "https://avatars3.githubusercontent.com/u/1170938"
@@ -23,6 +25,7 @@ var pm = {
   firstName: "Paul",
   lastName: "McCartney",
   mobile: "832-392-3949",
+  email: "paul@macca.com",
   org: "Apple",
   loc: "London, UK",
   imgPath: "https://avatars3.githubusercontent.com/u/1170938"
@@ -122,13 +125,16 @@ function aggContactDetails(c) {
 }
 
 const listDetailItems = aggContactDetails(contacts[1]).map((d) =>
-  <p>{d}</p>
+  <tr>
+    <th className="detail-label">{d}</th>
+    <td className="detail-deets">{contacts[1][d]}</td>
+  </tr>
 );
 
 class ListDetail extends React.Component {
   render() {
     return (
-      <table>
+      <table className="detail-table">
         {listDetailItems}
       </table>
     )
@@ -148,10 +154,6 @@ class ViewDetail extends React.Component {
           <path d="M4,6 C2.8969574,6 2,5.10263692 2,4 C2,2.89736308 2.8969574,2 4,2 C5.1030426,2 6,2.89736308 6,4 C6,5.10263692 5.1030426,6 4,6 L4,6 Z M4,3 C3.44885993,3 3,3.4485342 3,4 C3,4.5514658 3.44885993,5 4,5 C4.55114007,5 5,4.5514658 5,4 C5,3.4485342 4.55114007,3 4,3 L4,3 Z" id="Fill-56"></path>
         </svg>
         <p className="list-loc">{contacts[1].loc}</p>
-        <h3>Name</h3>
-        <p>{contacts[0].firstName}</p>
-        <h3>Phone</h3>
-        <p>832-394-9203</p>
         <ListDetail />
       </div>
     )
